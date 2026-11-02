@@ -14,3 +14,5 @@ export interface CheckoutResult {
   total: number
   createdAt: string
 }
+
+export type OrderPayload = Omit<CheckoutResult, 'id'>

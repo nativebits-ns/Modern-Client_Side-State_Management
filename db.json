@@ -1,9 +1,207 @@
 {
   "products": [
-    { "id": "p1", "name": "Mechanical Keyboard", "price": 120 },
-    { "id": "p2", "name": "Wireless Ergonomic Mouse", "price": 55 },
-    { "id": "p3", "name": "USB-C Multiport Adapter", "price": 35 },
-    { "id": "p4", "name": "Ultra-Wide Monitor Light Bar", "price": 75 }
+    {
+      "id": "p1",
+      "name": "Mechanical Keyboard",
+      "price": 120
+    },
+    {
+      "id": "p2",
+      "name": "Wireless Ergonomic Mouse",
+      "price": 55
+    },
+    {
+      "id": "p3",
+      "name": "USB-C Multiport Adapter",
+      "price": 35
+    },
+    {
+      "id": "p4",
+      "name": "Ultra-Wide Monitor Light Bar",
+      "price": 75
+    }
   ],
-  "orders": []
+  "orders": [
+    {
+      "items": [
+        {
+          "id": "p3",
+          "name": "USB-C Multiport Adapter",
+          "price": 35,
+          "quantity": 1
+        },
+        {
+          "id": "p4",
+          "name": "Ultra-Wide Monitor Light Bar",
+          "price": 75,
+          "quantity": 4
+        },
+        {
+          "id": "p2",
+          "name": "Wireless Ergonomic Mouse",
+          "price": 55,
+          "quantity": 2
+        },
+        {
+          "id": "p1",
+          "name": "Mechanical Keyboard",
+          "price": 120,
+          "quantity": 6
+        }
+      ],
+      "total": 1165,
+      "createdAt": "2026-11-02T07:32:56.530Z",
+      "id": 1
+    },
+    {
+      "items": [
+        {
+          "id": "p1",
+          "name": "Mechanical Keyboard",
+          "price": 120,
+          "quantity": 5
+        },
+        {
+          "id": "p2",
+          "name": "Wireless Ergonomic Mouse",
+          "price": 55,
+          "quantity": 2
+        },
+        {
+          "id": "p3",
+          "name": "USB-C Multiport Adapter",
+          "price": 35,
+          "quantity": 1
+        },
+        {
+          "id": "p4",
+          "name": "Ultra-Wide Monitor Light Bar",
+          "price": 75,
+          "quantity": 4
+        }
+      ],
+      "total": 1045,
+      "createdAt": "2026-11-02T07:33:09.364Z",
+      "id": 2
+    },
+    {
+      "items": [
+        {
+          "id": "p3",
+          "name": "USB-C Multiport Adapter",
+          "price": 35,
+          "quantity": 5
+        },
+        {
+          "id": "p4",
+          "name": "Ultra-Wide Monitor Light Bar",
+          "price": 75,
+          "quantity": 2
+        }
+      ],
+      "total": 325,
+      "createdAt": "2026-11-02T07:33:16.725Z",
+      "id": 3
+    },
+    {
+      "items": [
+        {
+          "id": "p3",
+          "name": "USB-C Multiport Adapter",
+          "price": 35,
+          "quantity": 5
+        },
+        {
+          "id": "p4",
+          "name": "Ultra-Wide Monitor Light Bar",
+          "price": 75,
+          "quantity": 2
+        }
+      ],
+      "total": 325,
+      "createdAt": "2026-11-02T07:33:17.893Z",
+      "id": 4
+    },
+    {
+      "items": [
+        {
+          "id": "p1",
+          "name": "Mechanical Keyboard",
+          "price": 120,
+          "quantity": 4
+        },
+        {
+          "id": "p2",
+          "name": "Wireless Ergonomic Mouse",
+          "price": 55,
+          "quantity": 3
+        },
+        {
+          "id": "p3",
+          "name": "USB-C Multiport Adapter",
+          "price": 35,
+          "quantity": 3
+        },
+        {
+          "id": "p4",
+          "name": "Ultra-Wide Monitor Light Bar",
+          "price": 75,
+          "quantity": 2
+        }
+      ],
+      "total": 900,
+      "createdAt": "2026-11-02T07:33:25.118Z",
+      "id": 5
+    },
+    {
+      "items": [
+        {
+          "id": "p4",
+          "name": "Ultra-Wide Monitor Light Bar",
+          "price": 75,
+          "quantity": 2
+        },
+        {
+          "id": "p1",
+          "name": "Mechanical Keyboard",
+          "price": 120,
+          "quantity": 3
+        }
+      ],
+      "total": 510,
+      "createdAt": "2026-11-02T12:25:02.161Z",
+      "id": 6
+    },
+    {
+      "items": [
+        {
+          "id": "p4",
+          "name": "Ultra-Wide Monitor Light Bar",
+          "price": 75,
+          "quantity": 1
+        },
+        {
+          "id": "p3",
+          "name": "USB-C Multiport Adapter",
+          "price": 35,
+          "quantity": 1
+        },
+        {
+          "id": "p2",
+          "name": "Wireless Ergonomic Mouse",
+          "price": 55,
+          "quantity": 1
+        },
+        {
+          "id": "p1",
+          "name": "Mechanical Keyboard",
+          "price": 120,
+          "quantity": 1
+        }
+      ],
+      "total": 285,
+      "createdAt": "2026-11-02T12:25:09.600Z",
+      "id": 7
+    }
+  ]
 }
