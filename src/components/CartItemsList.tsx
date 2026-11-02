@@ -15,12 +15,12 @@ const CartItemRow = memo(function CartItemRow({ item }: { item: CartItem }) {
         <p className="text-sm text-stone-500 tabular-nums">{formatPrice(item.price)} each</p>
       </div>
 
-      <div className="flex items-center gap-2 -md border border-stone-300 p-1">
+      <div className="flex items-center gap-2 rounded-md border border-stone-300 p-1">
         <button
           type="button"
           onClick={() => reduceItem(item.id)}
           aria-label={`Decrease quantity of ${item.name}`}
-          className="flex h-7 w-7 items-center justify-center  text-stone-600 transition-colors hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-stone-900"
+          className="flex h-7 w-7 items-center justify-center rounded text-stone-600 transition-colors hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-stone-900"
         >
           -
         </button>
@@ -31,7 +31,7 @@ const CartItemRow = memo(function CartItemRow({ item }: { item: CartItem }) {
           type="button"
           onClick={() => increaseItem(item.id)}
           aria-label={`Increase quantity of ${item.name}`}
-          className="flex h-7 w-7 items-center justify-center  text-stone-600 transition-colors hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-stone-900"
+          className="flex h-7 w-7 items-center justify-center rounded text-stone-600 transition-colors hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-stone-900"
         >
           +
         </button>
@@ -60,7 +60,7 @@ export function CartItemsList() {
 
   if (isEmpty) {
     return (
-      <div className="-lg border border-dashed border-stone-300 p-8 text-center">
+      <div className="rounded-lg border border-dashed border-stone-300 p-8 text-center">
         <p className="text-stone-600">Your cart is empty. Add a product from the catalog.</p>
       </div>
     )

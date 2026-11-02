@@ -16,5 +16,3 @@ export interface CheckoutResult {
 }
 
 export type OrderPayload = Omit<CheckoutResult, 'id'>
-
-export type CheckoutStatus = 'idle' | 'submitting' | 'success' | 'error'

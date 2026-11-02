@@ -1,21 +1,30 @@
 import { useCallback, useState } from 'react'
-import { CartModal } from './components/CartModal'
+import { CheckoutContext } from './checkout/CheckoutContext'
+import { CartDrawer } from './components/CartDrawer'
+import { CartSynchronizer } from './components/CartSynchronizer'
 import { Catalog } from './components/Catalog'
 import { Header } from './components/Header'
+import { OrderCompletionBridge } from './components/OrderCompletionBridge'
+import { PaymentPanel } from './components/PaymentPanel'
 
 const App = () => {
-  const [modalOpen, setModalOpen] = useState(false)
-  const openModal = useCallback(() => setModalOpen(true), [])
-  const closeModal = useCallback(() => setModalOpen(false), [])
+  const [drawerOpen, setDrawerOpen] = useState(false)
+  const openDrawer = useCallback(() => setDrawerOpen(true), [])
+  const closeDrawer = useCallback(() => setDrawerOpen(false), [])
 
   return (
-    <div className="min-h-screen bg-stone-50 text-stone-900">
-      <Header onCartClick={openModal} />
-      <main className="mx-auto max-w-5xl px-4 py-8">
-        <Catalog />
-      </main>
-      <CartModal open={modalOpen} onClose={closeModal} />
-    </div>
+    <CheckoutContext.Provider>
+      <CartSynchronizer />
+      <OrderCompletionBridge />
+      <div className="min-h-screen bg-stone-50 text-stone-900">
+        <Header onCartClick={openDrawer} />
+        <main className="mx-auto max-w-5xl px-4 py-8">
+          <Catalog />
+        </main>
+        <PaymentPanel />
+        <CartDrawer open={drawerOpen} onClose={closeDrawer} />
+      </div>
+    </CheckoutContext.Provider>
   )
 }
 
